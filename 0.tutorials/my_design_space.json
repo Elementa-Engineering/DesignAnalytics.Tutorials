@@ -30,11 +30,13 @@
          "_practical_ranges": [
             {
                "Passive House": 0.14,
-               "Single Pane": 1.02
+               "Single Pane": 1.02,
+               "Double, clear": 0.5,
+               "Double, low-e": 0.352
             }
          ]
       }
    ],
-   "space_id": "aa31e7b5-d077-4ee0-986a-da84c7a1f9aa",
+   "space_id": "59901958-cf3e-4e54-8550-098fff6ab78d",
    "version": "0.0.0"
 }
