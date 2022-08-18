@@ -1,0 +1,50 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ourVersions">
+        <value>
+          <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="3.7" />
+            <item index="1" class="java.lang.String" itemvalue="3.8" />
+            <item index="2" class="java.lang.String" itemvalue="3.9" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="setuptools" />
+            <item index="1" class="java.lang.String" itemvalue="deprecation" />
+            <item index="2" class="java.lang.String" itemvalue="fpdf" />
+            <item index="3" class="java.lang.String" itemvalue="click" />
+            <item index="4" class="java.lang.String" itemvalue="archetypal" />
+            <item index="5" class="java.lang.String" itemvalue="uvicorn" />
+            <item index="6" class="java.lang.String" itemvalue="pydantic" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N803" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="boto3.resources.base.ServiceResource.batch_get_item" />
+          <option value="boto3.resources.base.ServiceResource.Table" />
+          <option value="boto3.resources.base.ServiceResource.create_table" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PydanticTypeCheckerInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>
