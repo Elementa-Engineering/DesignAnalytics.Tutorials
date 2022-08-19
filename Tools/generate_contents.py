@@ -57,6 +57,5 @@ if __name__ == "__main__":
     print_contents()
     print("\n", 70 * "#", "\n")
     print_contents(
-        "http://nbviewer.jupyter.org/github/Elementa-Engineering"
-        "/DesignAnalytics.Tutorials/blob/main/notebooks/"
+        "https://nbviewer.org/github/Elementa-Engineering/DesignAnalytics.Tutorials/tree/main/notebooks/"
     )
