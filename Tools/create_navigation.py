@@ -67,9 +67,9 @@ def write_navbars():
         nb_file = os.path.basename(nb_name)
         is_comment = lambda cell: cell.source.startswith(NAV_COMMENT)
 
-        if is_comment(nb.cells[1]):
+        if is_comment(nb.cells[0]):
             print("- amending navbar for {0}".format(nb_file))
-            nb.cells[1].source = navbar
+            nb.cells[0].source = navbar
         else:
             print("- inserting navbar for {0}".format(nb_file))
             nb.cells.insert(1, new_markdown_cell(source=navbar))
