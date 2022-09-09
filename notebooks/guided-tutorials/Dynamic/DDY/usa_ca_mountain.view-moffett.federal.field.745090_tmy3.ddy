@@ -1,0 +1,397 @@
+Site:Location,
+  Mountain View-Moffett Federal Field,
+  37.4,      !Latitude
+  -122.05,     !Longitude
+  -8.0,     !Time Zone
+  12.0;       !Elevation
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Heating Design Day 99.6% Condns DB,!- Name
+  12,                                                          !- Month
+  21,                                                          !- Day of Month
+  WinterDesignDay,                                             !- Day Type
+  2.5,                                                         !- Max Dry-Bulb Temp {C}
+  0,                                                           !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  2.5,                                                         !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.182648,                                               !- Barometric Pressure {Pa}
+  0.6,                                                         !- Wind Speed {m/s}
+  140.0,                                                       !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  0;                                                           !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Jan 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  1,                                                           !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  15.0,                                                        !- Max Dry-Bulb Temp {C}
+  7.5,                                                         !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  10.7,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  3.1,                                                         !- Wind Speed {m/s}
+  315,                                                         !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Feb 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  2,                                                           !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  18.358,                                                      !- Max Dry-Bulb Temp {C}
+  9.3,                                                         !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  12.9,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  2.4,                                                         !- Wind Speed {m/s}
+  339,                                                         !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Mar 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  3,                                                           !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  24.0,                                                        !- Max Dry-Bulb Temp {C}
+  9.5,                                                         !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  16.2,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  2.9,                                                         !- Wind Speed {m/s}
+  341,                                                         !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Apr 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  4,                                                           !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  25.62,                                                       !- Max Dry-Bulb Temp {C}
+  9.6,                                                         !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  15.3,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  3.9,                                                         !- Wind Speed {m/s}
+  353,                                                         !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field May 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  5,                                                           !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  22.0,                                                        !- Max Dry-Bulb Temp {C}
+  9.0,                                                         !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  15.3,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  5.5,                                                         !- Wind Speed {m/s}
+  345,                                                         !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Jun 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  6,                                                           !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  26.0,                                                        !- Max Dry-Bulb Temp {C}
+  9.9,                                                         !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  17.6,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  6.4,                                                         !- Wind Speed {m/s}
+  345,                                                         !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Jul 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  7,                                                           !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  28.0,                                                        !- Max Dry-Bulb Temp {C}
+  8.9,                                                         !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  20.6,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  4.8,                                                         !- Wind Speed {m/s}
+  340,                                                         !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Aug 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  8,                                                           !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  28.0,                                                        !- Max Dry-Bulb Temp {C}
+  10.2,                                                        !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  19.5,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  4.7,                                                         !- Wind Speed {m/s}
+  344,                                                         !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Sep 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  9,                                                           !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  33.0,                                                        !- Max Dry-Bulb Temp {C}
+  10.8,                                                        !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  18.6,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  4.0,                                                         !- Wind Speed {m/s}
+  340,                                                         !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Oct 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  10,                                                          !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  27.0,                                                        !- Max Dry-Bulb Temp {C}
+  10.6,                                                        !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  15.2,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  2.6,                                                         !- Wind Speed {m/s}
+  0,                                                           !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Nov 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  11,                                                          !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  19.0,                                                        !- Max Dry-Bulb Temp {C}
+  8.6,                                                         !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  11.7,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  2.5,                                                         !- Wind Speed {m/s}
+  351,                                                         !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  Mountain View-Moffett Federal Field Dec 2% Condns DB=>MCWB (0.2% Condns DB=>MWB),!- Name
+  12,                                                          !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  17.0,                                                        !- Max Dry-Bulb Temp {C}
+  8.3,                                                         !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  11.7,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  101300.0,                                                    !- Barometric Pressure {Pa}
+  2.4,                                                         !- Wind Speed {m/s}
+  350,                                                         !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
