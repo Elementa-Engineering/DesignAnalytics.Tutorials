@@ -1,42 +1,43 @@
 {
-   "reals": [
-      {
-         "name": "WWR",
-         "base_units": null,
-         "units": "",
-         "base": 10,
-         "transform": "identity",
-         "prior": "uniform",
-         "low": 0.1,
-         "high": 0.9
-      }
-   ],
-   "integers": [],
-   "categoricals": [
+   "dimensions": [
       {
          "name": "WINU",
-         "base_units": null,
-         "units": "Btu/(hr*ft**2*delta_degF)",
-         "base": 10,
-         "transform": "label",
-         "prior": null,
          "categories": [
-            0.14088812726528263,
-            0.2993872704387256,
-            0.40505336588768753,
-            0.4931084454284892,
-            0.7924957158672148
+            0.8,
+            1.7,
+            2.3,
+            2.8,
+            4.5
          ],
-         "_practical_ranges": [
-            {
-               "Passive House": 0.14,
-               "Single Pane": 1.02,
-               "Double, clear": 0.5,
-               "Double, low-e": 0.352
-            }
-         ]
+         "low": null,
+         "high": null,
+         "base": 10,
+         "transformer": "label",
+         "prior": null,
+         "dtype": "float64",
+         "practical_ranges": {
+            "Passive House": 0.14,
+            "Single Pane": 1.02,
+            "Double, clear": 0.5,
+            "Double, low-e": 0.352
+         }
+      },
+      {
+         "name": "WWR",
+         "categories": null,
+         "low": 0.1,
+         "high": 0.9,
+         "base": 10,
+         "transformer": "identity",
+         "prior": "uniform",
+         "dtype": "float64",
+         "practical_ranges": null
       }
    ],
-   "space_id": "59901958-cf3e-4e54-8550-098fff6ab78d",
+   "reals": [],
+   "integers": [],
+   "categoricals": [],
+   "space_id": "77c09b17-72c1-4bbf-b2de-64412eb425bb",
+   "baseline": {},
    "version": "0.0.0"
 }
