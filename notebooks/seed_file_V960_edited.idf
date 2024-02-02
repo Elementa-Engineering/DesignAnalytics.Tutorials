@@ -1,4 +1,4 @@
-!- Linux Line endings 
+!- Darwin Line endings 
 
 Version,
     9.6;                      !- Version Identifier
@@ -3636,7 +3636,7 @@ Material,
     1.72959999999999,         !- Conductivity
     2242.99999999999,         !- Density
     836.999999999999,         !- Specific Heat
-    0.87,                     !- Thermal Absorptance
+    0.91,                     !- Thermal Absorptance
     0.65,                     !- Solar Absorptance
     0.7;                      !- Visible Absorptance
 
@@ -6682,6 +6682,61 @@ OUTPUT:VARIABLE,
     Zone Thermostat Heating Setpoint Temperature,    !- Variable Name
     Hourly;                   !- Reporting Frequency
 
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Air System Outdoor Air Minimum Flow Fraction,    !- Variable Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Air System Total Cooling Energy,    !- Variable Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Air System Total Heating Energy,    !- Variable Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Heat Exchanger Latent Effectiveness,    !- Variable Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Heat Exchanger Sensible Effectiveness,    !- Variable Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Heat Exchanger Total Heating Rate,    !- Variable Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Water Heater Heating Energy,    !- Variable Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Ideal Loads Zone Total Cooling Energy,    !- Variable Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Ideal Loads Zone Total Heating Energy,    !- Variable Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Thermostat Cooling Setpoint Temperature,    !- Variable Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:VARIABLE,
+    *,                        !- Key Value
+    Zone Thermostat Heating Setpoint Temperature,    !- Variable Name
+    Monthly;                  !- Reporting Frequency
+
 OUTPUT:METER,
     Baseboard:EnergyTransfer,    !- Key Name
     Hourly;                   !- Reporting Frequency
@@ -6765,6 +6820,90 @@ OUTPUT:METER,
 OUTPUT:METER,
     WaterSystems:EnergyTransfer,    !- Key Name
     Hourly;                   !- Reporting Frequency
+
+OUTPUT:METER,
+    Baseboard:EnergyTransfer,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Cooling:DistrictCooling,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Cooling:Electricity,      !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Cooling:EnergyTransfer,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Cooling:Gas,              !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    CoolingCoils:EnergyTransfer,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Electricity:Facility,     !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Fans:Electricity,         !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Gas:Facility,             !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    HeatRejection:Electricity,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    HeatRejection:EnergyTransfer,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Heating:DistrictHeating,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Heating:Electricity,      !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Heating:EnergyTransfer,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Heating:Gas,              !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    HeatingCoils:EnergyTransfer,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Pumps:Electricity,        !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Refrigeration:Electricity,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    Refrigeration:EnergyTransfer,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    WaterSystems:Electricity,    !- Key Name
+    Monthly;                  !- Reporting Frequency
+
+OUTPUT:METER,
+    WaterSystems:EnergyTransfer,    !- Key Name
+    Monthly;                  !- Reporting Frequency
 
 OUTPUT:SQLITE,
     SimpleAndTabular,         !- Option Type

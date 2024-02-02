@@ -11,8 +11,9 @@
          ],
          "low": null,
          "high": null,
+         "baseline": null,
          "base": 10,
-         "transformer": "label",
+         "transformer": null,
          "prior": null,
          "dtype": "float64",
          "practical_ranges": {
@@ -27,8 +28,9 @@
          "categories": null,
          "low": 0.1,
          "high": 0.9,
+         "baseline": null,
          "base": 10,
-         "transformer": "identity",
+         "transformer": null,
          "prior": "uniform",
          "dtype": "float64",
          "practical_ranges": null
@@ -37,7 +39,7 @@
    "reals": [],
    "integers": [],
    "categoricals": [],
-   "space_id": "77c09b17-72c1-4bbf-b2de-64412eb425bb",
-   "baseline": {},
+   "space_id": "ad125cd4-211e-4c94-b250-b58378e5924d",
+   "baseline": null,
    "version": "0.0.0"
 }
