@@ -2,19 +2,17 @@
 
 Created on 2022-08-18
 
-@author: samuel.letellier-duc 
+@author: samuel.letellier-duc
 """
 
 import logging
-import sys
 
 
 import itertools
 import os
 
 import nbformat
-from generate_contents import NOTEBOOK_DIR, REG, get_notebook_title, iter_notebooks
-from ipykernel import kernelspec as ks
+from generate_contents import NOTEBOOK_DIR, get_notebook_title, iter_notebooks
 from nbformat.v4.nbbase import new_markdown_cell
 
 logger = logging.getLogger(__name__)
@@ -65,7 +63,9 @@ def write_navbars():
     for nb_name, navbar in iter_navbars():
         nb = nbformat.read(nb_name, as_version=4)
         nb_file = os.path.basename(nb_name)
-        is_comment = lambda cell: cell.source.startswith(NAV_COMMENT)
+
+        def is_comment(cell):
+            return cell.source.startswith(NAV_COMMENT)
 
         if is_comment(nb.cells[0]):
             print("- amending navbar for {0}".format(nb_file))

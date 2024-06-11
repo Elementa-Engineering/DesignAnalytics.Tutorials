@@ -2,20 +2,18 @@
 
 Created on 2022-08-19
 
-@author: samuel.letellier-duc 
+@author: samuel.letellier-duc
 """
 
 import logging
 import os
-import sys
 
 from path import Path
+import nbformat
+from nbconvert.preprocessors import ExecutePreprocessor
 
 logger = logging.getLogger(__name__)
 # use logger instead of print
-
-import nbformat
-from nbconvert.preprocessors import ExecutePreprocessor
 
 NOTEBOOK_DIR = os.path.join(os.path.dirname(__file__), "..", "notebooks")
 

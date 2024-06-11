@@ -2,17 +2,16 @@
 
 Created on 2022-08-18
 
-@author: samuel.letellier-duc 
+@author: samuel.letellier-duc
 """
 
 import logging
-
-logger = logging.getLogger(__name__)
-# use logger instead of print
-
 import os
 import re
 import nbformat
+
+logger = logging.getLogger(__name__)
+# use logger instead of print
 
 NOTEBOOK_DIR = os.path.join(os.path.dirname(__file__), "..", "notebooks")
 
