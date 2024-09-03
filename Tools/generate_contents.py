@@ -8,6 +8,7 @@ Created on 2022-08-18
 import logging
 import os
 import re
+
 import nbformat
 
 logger = logging.getLogger(__name__)
@@ -21,10 +22,12 @@ REG = re.compile(r"(\d\d)\.(\d\d)-(.*)\.ipynb")
 
 
 def iter_notebooks():
+    """Iterate over the notebooks."""
     return sorted(nb for nb in os.listdir(NOTEBOOK_DIR) if REG.match(nb))
 
 
 def get_notebook_title(nb_file):
+    """Get the title of the notebook."""
     nb = nbformat.read(os.path.join(NOTEBOOK_DIR, nb_file), as_version=4)
     for cell in nb.cells:
         if cell.source.startswith("#"):
@@ -32,23 +35,22 @@ def get_notebook_title(nb_file):
 
 
 def gen_contents(directory=None):
+    """Generate the contents of the notebooks."""
     for nb in iter_notebooks():
-        if directory:
-            nb_url = os.path.join(directory, nb)
-        else:
-            nb_url = nb
+        nb_url = os.path.join(directory, nb) if directory else nb
         chapter, section, title = REG.match(nb).groups()
         title = get_notebook_title(nb)
         if section == "00":
             if chapter in ["00", "06"]:
-                yield "\n### [{0}]({1})".format(title, nb_url)
+                yield f"\n### [{title}]({nb_url})"
             else:
-                yield "\n### [{0}. {1}]({2})".format(int(chapter), title, nb_url)
+                yield f"\n### [{int(chapter)}. {title}]({nb_url})"
         else:
-            yield "- [{0}]({1})".format(title, nb_url)
+            yield f"- [{title}]({nb_url})"
 
 
 def print_contents(directory=None):
+    """Print the contents of the notebooks."""
     print("\n".join(gen_contents(directory)))
 
 

@@ -7,8 +7,8 @@ Created on 2022-08-19
 
 import logging
 import os
+from pathlib import Path
 
-from path import Path
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
 
@@ -19,7 +19,8 @@ NOTEBOOK_DIR = os.path.join(os.path.dirname(__file__), "..", "notebooks")
 
 
 def run_notebooks():
-    for url in Path(NOTEBOOK_DIR).files("*.ipynb"):
+    """Run all the notebooks."""
+    for url in Path(NOTEBOOK_DIR).glob("*.ipynb"):
         with open(url) as f:
             nb = nbformat.read(f, as_version=4)
             ep = ExecutePreprocessor(timeout=600, kernel_name="python3")

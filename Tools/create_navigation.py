@@ -5,10 +5,8 @@ Created on 2022-08-18
 @author: samuel.letellier-duc
 """
 
-import logging
-
-
 import itertools
+import logging
 import os
 
 import nbformat
@@ -20,6 +18,7 @@ logger = logging.getLogger(__name__)
 
 
 def prev_this_next(it):
+    """Generate previous, this, and next elements from an iterator."""
     a, b, c = itertools.tee(it, 3)
     next(c)
     return zip(itertools.chain([None], a), b, itertools.chain(c, [None]))
@@ -42,6 +41,7 @@ COLAB_LINK = """"""
 
 
 def iter_navbars():
+    """Generate the navbar elements for each notebook."""
     for prev_nb, nb, next_nb in prev_this_next(iter_notebooks()):
         navbar = NAV_COMMENT
         if prev_nb:
@@ -60,6 +60,7 @@ def iter_navbars():
 
 
 def write_navbars():
+    """Write the navbars into the notebooks."""
     for nb_name, navbar in iter_navbars():
         nb = nbformat.read(nb_name, as_version=4)
         nb_file = os.path.basename(nb_name)
@@ -68,10 +69,10 @@ def write_navbars():
             return cell.source.startswith(NAV_COMMENT)
 
         if is_comment(nb.cells[0]):
-            print("- amending navbar for {0}".format(nb_file))
+            print(f"- amending navbar for {nb_file}")
             nb.cells[0].source = navbar
         else:
-            print("- inserting navbar for {0}".format(nb_file))
+            print(f"- inserting navbar for {nb_file}")
             nb.cells.insert(1, new_markdown_cell(source=navbar))
 
         if is_comment(nb.cells[-1]):

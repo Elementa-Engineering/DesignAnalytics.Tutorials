@@ -130,3 +130,5 @@ dmypy.json
 
 #archetypal
 notebooks/cache/
+
+notebooks/.env.prod
